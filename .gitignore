@@ -1,1 +1,7 @@
 .idea/
+/datasetW/
+/utils/
+tags
+.ipynb*
+dataparser*
+dataparsing*
