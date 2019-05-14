@@ -14,5 +14,5 @@ Calibration;Sensor phenomena and characterization;Wearable sensors;Capacitive se
 Wearable robots;soft robot applications;deep learning in robotics and automation},
 
 ## Usage
-SGSMG.ipynb 
+SSGMG.ipynb 
 based on google colab
