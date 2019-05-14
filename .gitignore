@@ -1,7 +1,10 @@
 .idea/
 /datasetW/
 /utils/
+__pycache__
 tags
 .ipynb*
 dataparser*
 dataparsing*
+datatest.py
+*.swp
