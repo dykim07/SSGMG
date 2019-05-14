@@ -89,7 +89,7 @@ class dataLoader():
          
         return sensor, motion
 
-    def getTestDataSet(self) -> (np.ndarray, np.ndarray):
+    def getTestDataSetTags(self) -> (np.ndarray, np.ndarray):
         sensor = []
         for _, data in self.sensor_test.items():
             data = self.sensor_scaler.transform(data)
