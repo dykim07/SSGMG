@@ -18,7 +18,7 @@ def generateWindow(X:np.ndarray, window_size:int) -> np.ndarray:
     return x_data
 
 class dataLoader():
-    def __init__(self):
+    def __init__(self, base_path = None):
 
         self.sensor_train = dict()
         self.motion_train = dict()
@@ -30,7 +30,10 @@ class dataLoader():
 
         self.window_size = 120
         self.tags = ['W' + str(i) for i in range(2, 7)]
-        self.base_path = os.path.join(os.getcwd(), 'dataset')
+        if base_path == None:
+            self.base_path = os.path.join(os.getcwd(), 'dataset')
+        else :
+            self.base_path = os.path,join(base_path, 'dataset')
         self.sensor_scaler = StandardScaler()
 
         self.loadDataSet()
