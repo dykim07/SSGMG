@@ -103,7 +103,7 @@ class dataLoader():
 
     def getTestDataSetTags(self, tag:str) -> (np.ndarray, np.ndarray):
         sensor = self.sensor_test[tag]
-        sensor = self.sensor_scaler.transform(data)
+        sensor = self.sensor_scaler.transform(sensor)
         sensor = generateWindow(sensor, self.window_size)
 
         motion = self.motion_test[tag]
