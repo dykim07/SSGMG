@@ -101,8 +101,8 @@ class dataLoader():
 
         return sensor, motion
 
-    def GetTestDataSet(self, tag:str) -> (np.ndarray, np.ndarray):
-        sensor = seelf.sensor_test[tag]
+    def getTestDataSet(self, tag:str) -> (np.ndarray, np.ndarray):
+        sensor = self.sensor_test[tag]
         sensor = self.sensor_scaler.transform(data)
         sensor = generateWindow(sensor, self.window_size)
 
