@@ -33,7 +33,6 @@ class dataLoader():
         if base_path == None:
             self.base_path = os.path.join(os.getcwd(), 'dataset')
         else :
-            print(base_path)
             self.base_path = os.path.join(base_path, 'dataset')
         self.sensor_scaler = StandardScaler()
 
